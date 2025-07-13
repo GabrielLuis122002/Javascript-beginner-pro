@@ -93,11 +93,79 @@ if (code === true) {
 }
 
 
-let a = 
-prompt("Input number 1");;
-let b = prompt("Input number 2");
-let squareda = (a ** 2);
-let squaredb = (b ** 2);
-let result = Math.floor(Math.sqrt(squareda + squaredb));
+// // let a = 
+// // prompt("Input number 1");;
+// // let b = prompt("Input number 2");
+// // let squareda = (a ** 2);
+// // let squaredb = (b ** 2);
+// // let result = Math.floor(Math.sqrt(squareda + squaredb));
 
-console.log(result);
+// console.log(result);
+
+//--------------------------------------------------------------
+// Assignment operators
+// let a = 2;
+// let b = 3;
+// let c = 4;
+
+// let add = a+= b;
+// let divide = a/= c;
+// let modulo = c%= b;
+
+
+// console.log(add)
+// console.log(divide)
+// console.log(modulo)
+
+
+// ------------------------------------------------
+// Comparison operators
+
+// Equal
+// let value1 = 5;
+// let value2 = "5";
+// console.log(value1 == value2);
+// console.log(value1 === value2);
+
+
+// // Not Equal
+// let value3 = 5;
+// let value4 = "5";
+// console.log(value3 != value4);
+
+
+// // Logical Operators
+
+let value1 = 1;
+let value2 = 2;
+let value3 = 3;
+
+// AND
+console.log(value1 < value2 && value2 < value3);
+console.log(value1 > value2 && value2 < value3);
+
+
+// OR
+console.log( value1 > value2 || value2 < value3);
+
+
+
+// NOT
+console.log(!(value1 < value2));
+
+
+//Miles-to-kilometers 
+// let km = 1.60934
+// let convert = prompt ("Convert Killometers to Meters")
+// let miles = (km * convert)
+
+// console.log(`The distanace of ${convert}kms is equal to ${miles}`)
+
+// BMI CALCULATOR
+
+// let centimeters = prompt("Enter your height in cm")
+// let weight = prompt("Enter your weight in Kilos")
+// let height = centimeters * 0.01
+// let BMI = (weight / (height ** 2));
+
+// console.log(BMI)
