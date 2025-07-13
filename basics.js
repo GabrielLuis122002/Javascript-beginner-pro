@@ -169,3 +169,92 @@ console.log(!(value1 < value2));
 // let BMI = (weight / (height ** 2));
 
 // console.log(BMI)
+
+
+// Arrays
+
+arr2 = ["black", "orange", "pink"];
+console.log(arr2)
+
+arr3 = new Array(10);
+arr4 = [10];
+
+console.log(arr3);
+console.log(arr4);
+
+
+let arr = ["hi there", 5 , true];
+console.log(typeof arr[0]);
+console.log(typeof arr[1]);
+console.log(typeof arr[2]);
+
+cars = ["Toyota", "Renault", "Volswagen"];
+
+
+console.log(cars[0]);
+console.log(cars[1]);
+console.log(cars[2]);
+
+// Built-in length property
+
+// colors = ["black", "orange", "pink"]
+// booleans = [true, false, false, true]
+// emptyArray = [];
+// lastElement = colors[colors.length - 1];
+
+
+
+// console.log("Length of colors:", colors.length);
+// console.log("Length of booleans:", booleans.length);
+// console.log("Length of colors:", emptyArray.length);
+// console.log(lastElement);
+
+
+// numbers = [12, 48, 36];
+// numbers [5] = 48;
+// console.log(numbers.length);
+
+// console.log("numbers", numbers);
+
+
+// shoppinglist = ["Milk", "Bread", "Apples"]
+// shoppinglist [1] = "Bananas"
+// console.log(shoppinglist)
+
+
+//Push method
+
+favoriteFruits = ["grapefruit", "orange", "lemon"];
+favoriteFruits.push("tangerine");
+let lengthOfFavoriteFruits = favoriteFruits.push("lime");
+console.log(favoriteFruits);
+
+// Splice method
+
+let arrOfShapes = ["circle", "triangle", "rectangle", "pentagon"]
+arrOfShapes.splice(3, 1, "square", "trapezoid");
+console.log(arrOfShapes);
+
+
+// Concat method
+
+let arr5 = [1, 2, 3];
+let arr6 = [4, 5, 6];
+let arr7 = arr5.concat(arr6);
+let arr8 = arr7.concat(7, 8, 9);
+
+
+
+
+// Deleting methods
+
+arr8.pop();
+arr8.shift();
+arr8.splice(1, 3);
+delete arr8[0];
+
+console.log(arr8);
+
+
+
+
