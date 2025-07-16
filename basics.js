@@ -232,7 +232,7 @@ console.log(favoriteFruits);
 // Splice method
 
 let arrOfShapes = ["circle", "triangle", "rectangle", "pentagon"]
-arrOfShapes.splice(3, 1, "square", "trapezoid");
+arrOfShapes.splice(2, 1, "square", "trapezoid");
 console.log(arrOfShapes);
 
 
@@ -256,5 +256,56 @@ delete arr8[0];
 console.log(arr8);
 
 
+// Finding Methods
+
+
+// find()
+arr8 = [2, 6, 7, 8,];
+let findIndex = arr8.indexOf(6);
+let fintIndex2 = arr8.indexOf(10);
+let findIndex3 = arr8.indexOf(6, 2);
+let findValue = arr8.find(function(e) {return e === 6});
+let findValue2 = arr8.find( e => e === 10);
+let animals = ["dog", "horse", "cat", "platypus", "dog"]
+let lastDog = animals.lastIndexOf("dog");
+
+console.log(findValue, findValue2);
+console.log(findIndex, fintIndex2);
+console.log(findIndex3);
+console.log(lastDog);
+
+
+// sort
+let names = ["James", "Alicia", "Fatiha", "James", "Maria"]
+let ages = [18, 72, 33, 56, 40]
+ages.sort();
+names.sort();
+console.log(names)
+console.log(ages)
+
+// Reversing
+let names2 = ["Alicia", "Bert", "Fatiha", "James", "Maria"]
+names2.reverse()
+console.log(names2)
+
+
+
+let shoppinglist = ["Milk", "Bread", "Apples"]
+shoppinglist [1] = "Bananas"
+shoppinglist.splice(2, 0, "Eggs")
+shoppinglist.pop();
+shoppinglist.sort()
+
+
+let findMilk = shoppinglist.indexOf("Milk")
+shoppinglist.splice(1, 0, "Carrots")
+shoppinglist.splice(2, 0, "Lettuce")
+console.log(shoppinglist)
+
+let drinks = ["Juice", "Pop"]
+let newlist = shoppinglist.concat(drinks)
+let newlists = shoppinglist.concat("Juice", "Pop")
+let pop = shoppinglist.lastIndexOf("pop")
+console.log(newlists)
 
 
