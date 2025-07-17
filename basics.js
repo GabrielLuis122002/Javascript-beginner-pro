@@ -309,3 +309,69 @@ let pop = shoppinglist.lastIndexOf("pop")
 console.log(newlists)
 
 
+// Multi Dimensional Arrays
+
+let someValues1 = [1, 2, 3];
+let someValues2 = [4, 5, 6];
+let someValues3 = [7, 8, 9];
+let arrOfArrays = [someValues1, someValues2, someValues3];
+let arrOfArrays2 = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+let value5 = arrOfArrays [0] [1];
+let value6 = arrOfArrays [2] [2];
+
+
+arrOfArraysOfArrays = [arrOfArrays, arrOfArrays, arrOfArrays]
+
+
+console.log(arrOfArrays);
+console.log(value5);
+console.log(value6);
+console.log(arrOfArraysOfArrays)
+
+let middleValue = arrOfArraysOfArrays[1][1][1];
+console.log(middleValue);
+
+
+let num = [1, 2, 3]
+let numnest = [num, num]
+let nummiddle = numnest [0] [1]
+
+console.log(nummiddle);
+
+
+// Objects
+let dog = { dogName: "JavaScript",
+            weight: 2.4,
+            color: "brown",
+            breed: "chihuahua",
+            age: 3,
+            burglarBiter: true,
+        
+};
+
+
+dog["color"] = "blue";
+dog.weight = 2.3;
+dog["age"] = "three";
+
+let variable = "age";
+console.log(dog[variable]);
+
+
+let myCar = {
+            brand: "Mitshubishi",
+            model: "L-300",
+            color: "white",
+            make: 1992,
+            forSale: "Available",
+}
+
+myCar["color"] = "black";
+
+
+
+console.log(myCar)
+console.log(myCar["make"])
+console.log(myCar["model"])
+console.log(myCar["forSale"])
