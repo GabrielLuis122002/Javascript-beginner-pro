@@ -370,8 +370,120 @@ let myCar = {
 myCar["color"] = "black";
 
 
-
 console.log(myCar)
 console.log(myCar["make"])
 console.log(myCar["model"])
 console.log(myCar["forSale"])
+
+let  company = { companyName: "Healthy Candy",
+ activities: [ "food manufacturing",
+"improving kids' health",
+"manufacturing toys"],
+ address: [{
+ street: "2nd street",
+ number: "123",
+ zipcode: "33116",
+ city: "Miami",
+ state: "Florida"
+ },
+ {
+ street: "1st West avenue",
+ number: "5",
+ zipcode: "75001",
+ city: "Addison",
+ state: "Texas"
+ }],
+ yearOfEstablishment: 2021
+ };
+
+
+ 
+company.address.zipcode = "33117";
+company["address"]["number"] = "100";
+
+
+let activity = company.activities[1];
+
+
+console.log(company);
+console.log(activity);
+
+let adresses = [
+    {
+        street: "2nd street",
+        number: "123",
+        zipcode: "33116",
+        city: "Miami",
+        state: "Florida"
+    },
+    {
+        street: "1st West avenue",
+        number: "5",
+        zipcode: "75001",
+        city: "Addison",
+        state: "Texas"
+    }];
+
+    let streetName = company.address[0].street
+    console.log(streetName)
+
+    // 1. Create an object named people with an empty array called friends
+let people = {
+    friends: []
+};
+
+// 2. Create three variables with friend objects
+let friend1 = {
+    firstName: "Alice",
+    lastName: "Smith",
+    id: 1
+};
+
+let friend2 = {
+    firstName: "Bob",
+    lastName: "Johnson",
+    id: 2
+};
+
+let friend3 = {
+    firstName: "Charlie",
+    lastName: "Brown",
+    id: 3
+};
+
+// 3. Add the three friends to the friends array
+people.friends.push(friend1, friend2, friend3);
+
+// 4. Output the result to the console
+console.log(people);
+
+
+
+const theList = [];
+
+// 2. Create three item objects with name, model, cost, and quantity
+const item1 = {
+    name: "Laptop",
+    model: "Dell XPS 13",
+    cost: 1200,
+    quantity: 5
+};
+
+const item2 = {
+    name: "Smartphone",
+    model: "iPhone 14",
+    cost: 999,
+    quantity: 10
+};
+
+const item3 = {
+    name: "Headphones",
+    model: "Sony WH-1000XM5",
+    cost: 350,
+    quantity: 7
+};
+
+// 3. Add all three objects to the main array using an array method
+theList.push(item1, item2, item3);
+
+console.log(theList);
