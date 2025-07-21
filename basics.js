@@ -82,15 +82,15 @@ variabletypetest5 = typeof myNum;
 
 
 
-let name = "Gabriel";
-let age = 22;
-let code = true;
+// let name = "Gabriel";
+// let age = 22;
+// let code = true;
 
-if (code === true) {
-    console.log(`Hello, my name is ${name} and my age is ${age} and I can code Javascript`)
-} else {
-     console.log(`Hello, my name is ${name} and my age is ${age} and I cannot code Javascript`)
-}
+// if (code === true) {
+//     console.log(`Hello, my name is ${name} and my age is ${age} and I can code Javascript`)
+// } else {
+//      console.log(`Hello, my name is ${name} and my age is ${age} and I cannot code Javascript`)
+// }
 
 
 // // let a = 
@@ -487,3 +487,167 @@ const item3 = {
 theList.push(item1, item2, item3);
 
 console.log(theList);
+
+
+// Logic Statements
+
+
+// if and if else statements
+
+let rain = true;
+
+if(rain) {
+    console.log("It is raining today");
+} if(!rain) {
+     console.log("It is not raining today");
+}
+
+
+
+// else if statements
+
+// let agess = 18;
+// let cost = 0;
+// let messages;
+// if (agess < 3) {
+//     cost = 0;
+//     message = "Access is free under three";
+// } else if (agess >= 3 && agess < 12) {
+//     cost = 5;
+//     message = "With the child discount, the fee is 5 dollars"
+// } else if (agess >= 12 && agess < 65) {
+//     cost = 10;
+//     message = "A regular ticket costs 10 dollars";
+// } else {
+//   cost = 7;
+//   message = "A ticket is 7 dollars";
+// }
+
+// console.log(message);
+// console.log("Your Total costs is " + cost)
+
+
+// let agess = prompt("What is your age?")
+// let messages;
+// agess = Number(agess);
+
+// if (agess >= 21) {
+//     messages = "Confirm entry to a venue and the ability to purchase alcohol";
+// } else if(agess >= 19) {
+//   messages = "Confirm entry to the venue but deny the purchase of alcohol"
+// } else {
+//     messages = "Deny Entry you are underage"
+// }
+
+
+let age = 18;
+
+
+let access = age < 18 ? console.log("denied") : console.log("allowed");
+
+let id = 1123;
+let ids = Number(id) 
+
+let entry = ids === 1123 ? console.log("confirm entry") : console.log("deny entry");
+
+
+// Switch statements
+
+let activities = "Get up";
+
+switch(activities) {
+    case "Get up":
+        console.log("It is 6:30AM");
+        break;
+    case "Breakfast":
+        console.log("It is 7:00AM");
+         break;
+    case "Drive to work":
+        console.log("It is 8:00AM");
+        break;
+    case "Lunch":
+        console.log("It is 12:00PM ");
+        break;
+    case "Drive home":
+        console.log("It is 5:00PM");
+        break;
+    case "Dinner":
+        console.log("It is 6:30PM");
+        break;
+    default: 
+         console.log("Go to Sleep");
+         break;
+}
+
+
+
+let randomNumber = Math.random();
+randomNumber = randomNumber * 6;
+RandomNumber = Math.floor(randomNumber );
+console.log(RandomNumber)
+
+
+let guess = prompt("Guess a number from 1-6");
+let answer = Number(guess);
+
+// Use switch on the random number
+switch(RandomNumber) {
+    case 1:
+        if (answer === 1) {
+            alert("You're right! The number is 1");
+        } else {
+            alert("Wrong! The number was 1");
+        }
+        break;
+    case 2:
+        if (answer === 2) {
+            alert("You're right! The number is 2");
+        } else {
+            alert("Wrong! The number was 2");
+        }
+        break;
+    case 3:
+        if (answer === 3) {
+            alert("You're right! The number is 3");
+        } else {
+            alert("Wrong! The number was 3");
+        }
+        break;
+    case 4:
+        if (answer === 4) {
+            alert("You're right! The number is 4");
+        } else {
+            alert("Wrong! The number was 4");
+        }
+        break;
+    case 5:
+        if (answer === 5) {
+            alert("You're right! The number is 5");
+        } else {
+            alert("Wrong! The number was 5");
+        }
+        break;
+    case 6:
+        if (answer === 6) {
+            alert("You're right! The number is 6");
+        } else {
+            alert("Wrong! The number was 6");
+        }
+        break;
+    default:
+        alert("Something went wrong!");
+}
+
+
+
+let grade = "A"
+
+if(grade === "F" || grade === "D") {
+ console.log("You've failed!");
+} else if(grade === "C" || grade === "B") {
+ console.log("You've passed!");
+} else if(grade === "A") {
+ console.log("Nice!");
+} else {
+ console.log("I don't know this grade.");
+}
