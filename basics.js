@@ -19,14 +19,12 @@ console.log(Math.random() * 100);
 console.log(Math.floor(Math.random() * 100));
 
 
-let nr1 = 12;
-var nr2 = 8;
-const PI = 3.14159;
+// let nr1 = 12;
+// var nr2 = 8;
+// const PI = 3.14159;
 
 
-console.log(nr1);
-console.log(nr2);
-console.log(PI);
+// 2
 
 
 let language = "Javascript";
@@ -581,62 +579,62 @@ switch(activities) {
 
 
 
-let randomNumber = Math.random();
-randomNumber = randomNumber * 6;
-RandomNumber = Math.floor(randomNumber );
-console.log(RandomNumber)
+// let randomNumber = Math.random();
+// randomNumber = randomNumber * 6;
+// RandomNumber = Math.floor(randomNumber );
+// console.log(RandomNumber)
 
 
-let guess = prompt("Guess a number from 1-6");
-let answer = Number(guess);
+// let guess = prompt("Guess a number from 1-6");
+// let answer = Number(guess);
 
-// Use switch on the random number
-switch(RandomNumber) {
-    case 1:
-        if (answer === 1) {
-            alert("You're right! The number is 1");
-        } else {
-            alert("Wrong! The number was 1");
-        }
-        break;
-    case 2:
-        if (answer === 2) {
-            alert("You're right! The number is 2");
-        } else {
-            alert("Wrong! The number was 2");
-        }
-        break;
-    case 3:
-        if (answer === 3) {
-            alert("You're right! The number is 3");
-        } else {
-            alert("Wrong! The number was 3");
-        }
-        break;
-    case 4:
-        if (answer === 4) {
-            alert("You're right! The number is 4");
-        } else {
-            alert("Wrong! The number was 4");
-        }
-        break;
-    case 5:
-        if (answer === 5) {
-            alert("You're right! The number is 5");
-        } else {
-            alert("Wrong! The number was 5");
-        }
-        break;
-    case 6:
-        if (answer === 6) {
-            alert("You're right! The number is 6");
-        } else {
-            alert("Wrong! The number was 6");
-        }
-        break;
-    default:
-        alert("Something went wrong!");
-}
+// // Use switch on the random number
+// switch(RandomNumber) {
+//     case 1:
+//         if (answer === 1) {
+//             alert("You're right! The number is 1");
+//         } else {
+//             alert("Wrong! The number was 1");
+//         }
+//         break;
+//     case 2:
+//         if (answer === 2) {
+//             alert("You're right! The number is 2");
+//         } else {
+//             alert("Wrong! The number was 2");
+//         }
+//         break;
+//     case 3:
+//         if (answer === 3) {
+//             alert("You're right! The number is 3");
+//         } else {
+//             alert("Wrong! The number was 3");
+//         }
+//         break;
+//     case 4:
+//         if (answer === 4) {
+//             alert("You're right! The number is 4");
+//         } else {
+//             alert("Wrong! The number was 4");
+//         }
+//         break;
+//     case 5:
+//         if (answer === 5) {
+//             alert("You're right! The number is 5");
+//         } else {
+//             alert("Wrong! The number was 5");
+//         }
+//         break;
+//     case 6:
+//         if (answer === 6) {
+//             alert("You're right! The number is 6");
+//         } else {
+//             alert("Wrong! The number was 6");
+//         }
+//         break;
+//     default:
+//         alert("Something went wrong!");
+// }
 
 
 
@@ -651,3 +649,68 @@ if(grade === "F" || grade === "D") {
 } else {
  console.log("I don't know this grade.");
 }
+
+
+// let game = ["Rock", "Paper", "Scissors"];
+
+// let playerInput = prompt("Choose Rock = 1, Paper = 2, or Scissors = 3");
+// let playerIndex = Number(playerInput) - 1; // use playerInput here, not playerChoice
+
+// if (playerIndex < 0 || playerIndex > 2 || isNaN(playerIndex)) {
+//     alert("Invalid input. Please refresh and enter 1, 2, or 3.");
+// } else {
+//     let playerChoice = game[playerIndex];
+
+//     let computerIndex = Math.floor(Math.random() * 3);
+//     let computerChoice = game[computerIndex];
+
+//     if (playerChoice === computerChoice) {
+//         alert(`Player chooses ${playerChoice}, Computer chooses ${computerChoice}. It's a tie!`);
+//     } else if (
+//         (playerChoice === "Rock" && computerChoice === "Scissors") ||
+//         (playerChoice === "Paper" && computerChoice === "Rock") ||
+//         (playerChoice === "Scissors" && computerChoice === "Paper")
+//     ) {
+//         alert(`Player chooses ${playerChoice}, Computer chooses ${computerChoice}. Player wins!!!`);
+//     } else {
+//         alert(`Player chooses ${playerChoice}, Computer chooses ${computerChoice}. Computer wins!!!`);
+//     }
+// }
+
+
+// Loops
+
+let someArray = ["Mike", "Antal", "Marc", "Emir", "Louiza", "Jack"]
+let notFound = true;
+while (notFound && someArray.length > 0) {
+    if (someArray[1] === "Louiza") {
+        console.log("Found her!");
+        notFound = false;
+    } else {
+        someArray.shift();
+    }
+}
+
+
+// let randomNumber = Math.floor(Math.random() * 5) + 1; 
+// let guess = Number(prompt("Guess a number between 1-5"));
+
+// while (guess !== randomNumber) {
+//   alert("Wrong guess, try again!");
+//   guess = Number(prompt("Guess a number between 1-5"));
+// }
+
+// alert("You've guessed the right number!");
+
+
+// let number;
+// do {
+//     number = prompt("Please enter a number between 0 and 100: ");
+// } while (!(number >= 0 && number < 100));
+
+// let counter = 0;
+
+// do {
+//     counter++
+//     console.log(counter)
+// } while (counter < 100)
