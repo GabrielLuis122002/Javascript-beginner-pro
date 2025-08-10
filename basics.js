@@ -708,9 +708,45 @@ while (notFound && someArray.length > 0) {
 //     number = prompt("Please enter a number between 0 and 100: ");
 // } while (!(number >= 0 && number < 100));
 
+
+// Do while loop
 // let counter = 0;
 
 // do {
 //     counter++
 //     console.log(counter)
 // } while (counter < 100)
+
+
+// for loop
+
+let myWork = [];
+
+
+for (let i =1; i<=10; i++) {
+
+        let status = (i % 2 === 0) ? false : true;
+
+        let lesson = {
+            name: `Lesson ${i}`,
+            status: status
+        };
+
+
+        myWork.push(lesson);
+
+}
+
+console.log(myWork);
+
+
+// loops and arrays
+
+let name = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+for (let i = 0; i < name.length; i++){
+    name[i] = "hello " + name[i];
+}
+
+console.log(name)
+
+
