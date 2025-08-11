@@ -932,3 +932,21 @@ calculator();
 
 
 // Special functions and operators
+
+let doingArrowStuff = x => console.log(x);
+
+doingArrowStuff("Great!");
+
+
+const arrs = ["squirrel", "alpaca", "buddy"];
+arrs.forEach (e => console.log(e));
+
+
+
+// Spread Operator
+function addTwoNumbers(x, y) {
+    console.log(x + y);
+}
+
+let arrz = [5, 9];
+addTwoNumbers(...arrz);
