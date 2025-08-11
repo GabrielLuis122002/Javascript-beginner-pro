@@ -744,9 +744,191 @@ console.log(myWork);
 
 let name = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
 for (let i = 0; i < name.length; i++){
-    name[i] = "hello " + name[i];
+    if(name[i].startsWith("M")) {
+        delete name[i];
+        continue;
+    }
+    name[i] = "hello" + name[i];
 }
 
 console.log(name)
 
 
+// 
+
+let grid = [];
+
+let numCells = 64
+
+let counter = 0;
+
+let row;
+
+for (let i = 0; i <numCells; i++) {
+
+    if (counter % 8 === 0) {
+        if(row !== undefined) {
+            grid.push(row)
+        }
+
+        row = [];
+    }
+
+
+    let temp = counter;
+    row.push(temp);
+
+
+
+    if (counter === numCells) {
+        grid.push(row);
+    }
+
+    counter++;
+}
+
+console.log(grid);
+
+
+// Loops and objects
+// For in loop
+
+let car = {
+    model : "Golf",
+    make: "Volkswagen",
+    year: 1999,
+    color: "black",
+};
+
+for (let prop in car) {
+    console.log(car[prop]);
+}
+
+
+let shirt = {
+    brand: "Nike",
+    size:  "XL",
+    price: "PHP 100",
+};
+
+for (let clothes in shirt){
+    console.log(shirt[clothes]);
+}
+
+let shirts = [
+    {brand: "Nike", size: "XL", price: "PHP 100"},
+    {brand: "Adidas", size: "L", price: "PHP 120"},
+    {brand: "Puma", size: "M", price: "PHP 90"},
+];
+
+for (let rack in shirts){
+    console.log(shirts[rack])
+}
+
+let car2 = {
+    model: "Mitsubishi",
+    make: "L-300",
+    year: 1992,
+    color: "Red",
+}
+
+  let arrKeys = Object.values(car2);
+    console.log(arrKeys);
+
+
+    // break
+
+ let cars3 = [
+ {
+ model: "Golf",
+ make: "Volkswagen",
+ year: 1999,
+ color: "black",
+ },
+ {
+ model: "Picanto",
+ make: "Kia",
+ year: 2020,
+ color: "red",
+ },
+ {
+ model: "Peugeot",
+ make: "208",
+ year: 2021,
+ color: "black",
+ },
+ {
+ model: "Fiat",
+ make: "Punto",
+ year: 2020,
+ color: "black",
+ }
+
+];
+
+for (let i = 0; i < cars3.length; i++) {
+ if (cars3[i].year >= 2020) {
+ if (cars3[i].color === "black") {
+ console.log("I have found my new car:", cars3[i]);
+ break;
+ }
+ }
+}
+
+
+
+// Functions
+
+// function sayHello() {
+//     let you = prompt("What's your name? ");
+//     console.log("Hello", you + "!")
+// }
+
+// sayHello();
+
+// function add() {
+//     let z = Number(prompt("Pick a 1st number"));
+//     let b = Number(prompt("Pick a 2nd number"));
+
+//     console.log ("The answer is " + (z + b) )
+// }
+
+// add();
+
+// function random() {
+//     let name = prompt("What is your name? ");
+
+//     let descriptive = ["Handsome", "Beautiful", "Wow"]
+
+//     let randomIndex = Math.floor(Math.random() * descriptive.length);
+//     let randomDescriptive = descriptive[randomIndex];
+
+//     console.log("Hi " + name + " " + "you are" + " " + randomDescriptive)
+// }
+
+// random();
+
+// function addTwoNumbers(x , y) {
+//    console.log(x + y);
+// }
+
+// addTwoNumbers(7, 8);
+
+
+function calculator() {
+let a = 5
+let b = 3
+let operator = "+";
+
+ if (operator === "+")
+    console.log( a + b);
+
+ else {
+    console.log( a - b);
+ }
+}
+
+calculator();
+
+
+// Special functions and operators
